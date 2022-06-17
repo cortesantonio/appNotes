@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.div1 form {
+    width: 80%;
+    display: inline;
+    margin: auto;
+}
+
+form input {
+    margin: 5px;
+    padding: 7px;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Chrome, Safari, Opera */
+    transform: scale(1.3);
+}
+form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 120px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.275);
+    font-size: 1rem;
+
+}
+
+.di1>h1 {
+    margin-bottom: 20px;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 20px auto;
+    gap: 25px;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.556);
+}
+
+#root>div {
+    width: 75%;
+    margin: auto;
+    height: 300px
+}
+
+.tarjeta {
+    text-align: center;
+}
+
+.tarjeta .titulo-notas {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tarjeta .descripcion-notas {
+    text-align: center;
+    margin: 25px auto;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8rem;
+}
+
+.tarjeta .btn-delete {
+    width: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width:980px) {
+    #root>div {
+        width: 85%;
+        margin: auto;
+        height: 300px
+    }
+}
+
+@media screen and (max-width:768px) {
+    #root>div {
+        width: 85%;
+        margin: auto;
+        height: 300px
+    }
+
+    #root {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+        gap: 25px;
+    }
+}
