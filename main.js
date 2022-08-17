@@ -40,7 +40,6 @@ function guardar(titulo, descripcion, color) {
     localStorage.setItem('notas', JSON.stringify(notas))
 }
 
-
 function renderizarNotas() {
     let notas = JSON.parse(localStorage.getItem('notas'))
 
@@ -88,5 +87,3 @@ function actualizar(x){
 
 
 }
-
-    // se elimina el primer item de la lista y no el selecionado. ver el indice que viaja a la funcion.
